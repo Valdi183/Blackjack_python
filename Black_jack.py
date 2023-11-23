@@ -75,7 +75,12 @@ for carta in main_crupier:
 print("  >> su score es {}".format(score_crupier))
 
 #Muestra el ganador en función de la puntuación
-if score_crupier > score_jugador:
-    print("Has perdido, buena suerte la próxima vez!")
-if score_crupier < score_jugador:
-    print("Has ganado!")   
+def Print_ganador_game():
+    if score_crupier > score_jugador:
+        print("Has perdido, buena suerte la próxima vez!")
+    if score_crupier < score_jugador:
+        print("Has ganado!")   
+    if score_crupier == score_jugador:
+        print("Empate")
+
+Print_ganador_game()
